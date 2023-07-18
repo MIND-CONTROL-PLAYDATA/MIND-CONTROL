@@ -31,7 +31,5 @@ public class Player {
 
     private int correctAnswers; // 정답 수
 
-    private boolean hasDrawingPermission; // 그림 권한 (true는 한 명에게만 부여)
-
     // 생성자, getter/setter, 기타 메서드
 }

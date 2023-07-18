@@ -26,9 +26,6 @@ public class Game {
     @Column(nullable = false)
     private int drawingTimeLimit; // 그림 그리는 타임 어택 시간 (초)
 
-    @Column(nullable = false)
-    private int guessingTimeLimit; // 정답 맞추는 시간 타임 어택 시간 (초)
-
     @ManyToOne
     @JoinColumn(name = "roomId")
     private Room room; // 해당 게임의 방

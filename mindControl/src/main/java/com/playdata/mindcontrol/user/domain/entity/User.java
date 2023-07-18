@@ -32,9 +32,6 @@ public class User {
     private byte[] profilePicture; // 프로필 사진 (이진 데이터)
 
     @Column(nullable = false)
-    private String role; // 유저 권한 (그림 그리는 유저, 그림 안 그리는 유저)
-
-    @Column(nullable = false)
     private LocalDateTime createdAt; // 생성 날짜
 
     // 생성자, getter/setter, 기타 메서드
