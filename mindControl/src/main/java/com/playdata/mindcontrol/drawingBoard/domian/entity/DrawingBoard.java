@@ -19,10 +19,8 @@ public class DrawingBoard {
     private Long id; // 자동 생성된 그림판 ID
 
     @OneToOne
-    @JoinColumn(name = "gameId")
+    @JoinColumn(name = "game_id")
     private Game game; // 해당 게임
-
-    private boolean onlyDrawingUserCanDraw; // 그림 권한이 있는 유저만 그릴 수 있는지 여부
 
     // 생성자, getter/setter, 기타 메서드
 }

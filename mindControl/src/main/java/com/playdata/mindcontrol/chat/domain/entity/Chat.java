@@ -20,11 +20,11 @@ public class Chat {
     private Long id; // 자동 생성된 채팅 ID
 
     @ManyToOne
-    @JoinColumn(name = "gameId")
+    @JoinColumn(name = "game_id")
     private Game game; // 해당 게임
 
     @ManyToOne
-    @JoinColumn(name = "senderId")
+    @JoinColumn(name = "sender_id")
     private User sender; // 메시지를 보낸 유저
 
     @Column(nullable = false)

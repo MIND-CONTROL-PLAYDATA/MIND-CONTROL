@@ -20,18 +20,17 @@ public class Player {
     private Long id; // 자동 생성된 플레이어 ID
 
     @ManyToOne
-    @JoinColumn(name = "gameId")
+    @JoinColumn(name = "game_id")
     private Game game; // 해당 게임
 
     @ManyToOne
-    @JoinColumn(name = "userId")
+    @JoinColumn(name = "user_id")
     private User user; // 유저 정보
 
     private String nickname; // 닉네임
 
     private int correctAnswers; // 정답 수
 
-    private boolean hasDrawingPermission; // 그림 권한 (true는 한 명에게만 부여)
 
     // 생성자, getter/setter, 기타 메서드
 }
