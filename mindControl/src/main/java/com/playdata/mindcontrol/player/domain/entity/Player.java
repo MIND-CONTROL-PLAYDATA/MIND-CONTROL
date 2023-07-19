@@ -31,5 +31,6 @@ public class Player {
 
     private int correctAnswers; // 정답 수
 
+
     // 생성자, getter/setter, 기타 메서드
 }

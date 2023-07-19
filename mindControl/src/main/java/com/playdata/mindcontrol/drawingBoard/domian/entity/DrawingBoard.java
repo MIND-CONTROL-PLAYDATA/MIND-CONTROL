@@ -19,7 +19,7 @@ public class DrawingBoard {
     private Long id; // 자동 생성된 그림판 ID
 
     @OneToOne
-    @JoinColumn(name = "gameId")
+    @JoinColumn(name = "game_id")
     private Game game; // 해당 게임
 
     // 생성자, getter/setter, 기타 메서드

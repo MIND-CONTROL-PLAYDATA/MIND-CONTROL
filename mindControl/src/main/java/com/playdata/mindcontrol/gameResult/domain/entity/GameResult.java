@@ -20,11 +20,11 @@ public class GameResult {
     private Long id; // 자동 생성된 게임 결과 ID
 
     @ManyToOne
-    @JoinColumn(name = "userId")
+    @JoinColumn(name = "user_id")
     private User user; // 유저 정보
 
     @ManyToOne
-    @JoinColumn(name = "gameId")
+    @JoinColumn(name = "game_id")
     private Game game; // 해당 게임
 
     private int correctAnswers; // 맞춘 정답 개수
