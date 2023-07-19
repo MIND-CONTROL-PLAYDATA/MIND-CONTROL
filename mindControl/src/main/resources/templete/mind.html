@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CatchMind Game</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #userList {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+    }
+    .user img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    #startBtn {
+      font-size: 24px;
+      padding: 12px 24px;
+      background-color: #3498db;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #gameScreen {
+      display: none;
+    }
+    #gameScreen canvas {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<div id="userList">
+  <h1>Hello!</h1>
+  <p>profile and nickname.</p>
+  <div class="user">
+    <img src="" alt="image" class="profileImg">
+    <input type="text" class="userName" placeholder="닉네임">
+  </div>
+  <div class="user">
+    <img src="" alt="프로필 이미지" class="profileImg">
+    <input type="text" class="userName" placeholder="닉네임">
+  </div>
+  <!-- 나머지 유저들도 같은 방식으로 추가 -->
+  <button id="startBtn">start</button>
+</div>
+
+<div id="gameScreen">
+  <h1>start Game</h1>
+  <canvas id="canvas" width="400" height="400" style="border: 1px solid black;"></canvas>
+  <br>
+  <input type="text" id="guessInput" placeholder="그림에 어떤 단어가 나오는지 맞춰보세요">
+  <button id="guessBtn">check</button>
+</div>
+
+<script src="catchmind.js"></script>
+</body>
+</html>

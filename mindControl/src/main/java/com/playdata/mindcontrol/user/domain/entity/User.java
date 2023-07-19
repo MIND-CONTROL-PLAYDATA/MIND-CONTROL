@@ -25,12 +25,10 @@ public class User {
 
     private String username; // 유저 이름
 
-
     private String password; // 패스워드
 
     @Lob
     private byte[] profilePicture; // 프로필 사진 (이진 데이터)
-
 
     private LocalDateTime createdAt; // 생성 날짜
 
